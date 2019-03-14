@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to this project!
 
-If you would like to contribute you can either open an issue or create a pull request with changes you've made.
+If you would like to contribute you can either [open an issue](../../issues) or create a pull request with changes you've made.
 
 Open an issue if:
    - You'd like to suggest large changes. For example, new pages or document/project wide structural changes.
