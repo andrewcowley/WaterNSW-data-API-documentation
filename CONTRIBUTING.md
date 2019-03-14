@@ -7,7 +7,7 @@ If you would like to contribute you can either open an issue or create a pull re
 Open an issue if:
    - You'd like to suggest large changes. For example, new pages or document/project wide structural changes.
    - You aren't sure how changes you'd like to make fit in with the current structure.
-   - You have questions any other questions on the documentation or how to contribute. 
+   - You have questions on the documentation, how to contribute, or anything else you'd like.
  
 Create a pull request if:
    - You're fixing typos or grammar.
