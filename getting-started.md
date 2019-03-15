@@ -12,7 +12,7 @@ All requests to the NSW Water API use the following URL:
 
 `https://realtimedata.waternsw.com.au/cgi/webservice.pl`
 
-The specifics of the request are made by providing one required URL query parameter.There is one required query parameter. There are also three optional query parameters that can be provided to modify the format of the response.
+The specifics of the request are made by providing one required URL query parameter. There is one required query parameter and three optional query parameters.
 
 ### Required query parameter
 
@@ -36,12 +36,11 @@ This object requires three parameters:
     }
   }
   ```
-  The JSON needs to have all spaces removed and provided in the URL as a URL query parameter. For example
+  The JSON needs to have all spaces removed and provided in the URL as a URL query parameter. For example:
   
  ```
  https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
  ```
-
 
 ### Optional parameters
 
