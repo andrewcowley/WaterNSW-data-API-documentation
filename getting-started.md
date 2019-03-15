@@ -24,6 +24,8 @@ This object requires three parameters:
   2. `version` -  The version of the API(or function?) being called
   3. `parameters` - parameters being passed to the function
   
+  All functions and their usage is provided in the [API reference](/api-reference.md).
+  
   For example a request to the [get_site_list](/api-reference.md#get_site_list) function:
   ```JSON
   {
@@ -39,8 +41,7 @@ This object requires three parameters:
  ```
  https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
  ```
- 
- Details of the available functions and their parameters are provided in the [API reference](/api-reference.md).
+
 
 ### Optional parameters
 
