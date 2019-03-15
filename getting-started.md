@@ -108,7 +108,15 @@ TODO
 
 ### Variables
 
-TODO
+A variable corresponds to a site measurement. For example 100.00 refers to the level of a river measured in metres. Some API requests require the variable to be specified in the request. Responses use the `v` key to specify which measurement is being returned.
+
+```
+{
+  "varfrom": 100.00,
+  "varto": 141.00
+}
+
+```
 
 #### Rivers and streams
 
