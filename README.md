@@ -8,8 +8,8 @@ The data provided by the web service is excellent, but the documentation provide
 
 ## Contents
 
-  - [Getting started](/getting-started.md)
-  - [API reference](/api-reference.md)
+  - [Getting started](/getting-started.md) [WIP]
+  - [API reference](/api-reference.md) [WIP]
 
 ## Credits
 
