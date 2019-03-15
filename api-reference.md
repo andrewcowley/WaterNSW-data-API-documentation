@@ -106,9 +106,21 @@ TODO
 ```
 
 ### Returns
-TODO
-```JSON
 
+```JSON
+{
+  "error_num":0,
+  "buff_required":43276,
+  "return":{
+    "datasources":[
+      {
+        "datasource":"CP",
+        "sites":["012001", "012002"...]
+      }
+    ]
+  },
+  "buff_supplied": 45439
+}
 ```
 ## get_site_geojson
 
