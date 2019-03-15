@@ -10,8 +10,19 @@ A list of monitoring sites that match a provided site list expression.
 |-----------|-----------------|-------------------------------|
 | site_list | string or array | A valid site list expression  |
 
-### Returns
+### Example query object
 
+```JSON
+{
+  "function": "get_site_list",
+  "version": 1,
+  "params": {
+    "site_list": "MATCH(20301*)"
+  }
+}
+```
+
+### Returns
 An array of matching sites
 
 ```JSON
