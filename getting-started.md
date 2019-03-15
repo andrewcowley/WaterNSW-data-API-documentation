@@ -34,6 +34,12 @@ This object requires three parameters:
     }
   }
   ```
+  The JSON needs to have all spaces removed and provided in the URL as a URL query parameter. For example
+  
+ ```
+ https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
+ ```
+ 
  Details of the available functions and their parameters are provided in the [API reference](/api-reference.md).
 
 ### Optional parameters
