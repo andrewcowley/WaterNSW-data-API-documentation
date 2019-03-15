@@ -66,7 +66,7 @@ TODO
       "daystart": 0900,
       "loopback": 120,
       "anyqual": 0,
-      "now": "201903111200"
+      "now": 201903111200
     }
   }
 }
