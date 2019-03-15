@@ -62,9 +62,9 @@ TODO
       "varto": 100.00,
       "accum_period": 0,
       "accum_partial": 0,
-      "output_time": start,
+      "output_time": "start",
       "daystart": 0900,
-      "loobback" 120,
+      "loopback": 120,
       "anyqual": 0,
       "now": "201903111200"
     }
