@@ -11,7 +11,22 @@ A list of monitoring sites that match a provided site list expression.
 | site_list | string or array | A valid site list expression  |
 
 ### Returns
-TODO
+
+An array of matching sites
+
+```JSON
+{
+  "error_num":0,
+  "buff_required":244,
+  "_return":{
+    "sites": [ "203010", "20301004", "20301018", "20301019", "20301020", "20301021", "20301022", "20301023", "203011", "203012", "203013", "203014", "203015", "203016", "203017", "203018", "203019"]
+    },
+  "buff_supplied":1000
+}
+```
+
+### [Example](https://repl.it/@AndrewCowley/getsitelist-example)
+
 ### Notes
 
 An array of matching sites.
