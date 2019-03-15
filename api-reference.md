@@ -38,10 +38,6 @@ An array of matching sites
 
 [Live example on Repl.it](https://repl.it/@AndrewCowley/getsitelist-example)
 
-### Notes
-
-An array of matching sites.
-
 ## get_latest_ts_values
 
 ### Paramters
@@ -50,10 +46,37 @@ An array of matching sites.
 |------------|-----------------|-----------------------------------------------------|
 | site_list  | string or array | A valid site list expression                        |
 | datasource | string or array | The datasource from which the data will be provided |
-| trace_list | array           |                                                     |
+| trace_list | object          |                                                     |
+
+### Example query object
+TODO
+```JSON
+{
+  "function": "get_latest_ts_values",
+  "version": 2,
+  "params": {
+    "site_list": "MATCH(203019)",
+    "datasource": "CP",
+    "tracelist": {
+      "varfrom": 100.00,
+      "varto": 100.00,
+      "accum_period": 0,
+      "accum_partial": 0,
+      "output_time": start,
+      "daystart": 0900,
+      "loobback" 120,
+      "anyqual": 0,
+      "now": "201903111200"
+    }
+  }
+}
+```
 
 ### Returns
 TODO
+```JSON
+
+```
 ## get_sites_by_datasource
 
 ### Paramters
@@ -64,6 +87,9 @@ TODO
 
 ### Returns
 TODO
+```JSON
+
+```
 ## get_site_geojson
 
 ### Parameters
