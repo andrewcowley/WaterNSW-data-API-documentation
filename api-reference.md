@@ -57,7 +57,7 @@ An array of matching sites
 |            | now             | *(optional)* Lookback starts from current time. Can be overridden with this value. |
 
 ### Example query object
-TODO
+
 ```JSON
 {
   "function": "get_latest_ts_values",
@@ -92,6 +92,18 @@ TODO
 | parameter   | type            | description                         |
 |-------------|-----------------|-------------------------------------|
 | datasources | array           | An array of one or more datasources |
+
+### Example query object
+
+```JSON
+{
+  "function": "get_sites_by_datasource",
+  "": 1,
+  "params" : {
+    "datasources": ["CP"]
+  }
+}
+```
 
 ### Returns
 TODO
