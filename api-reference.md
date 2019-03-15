@@ -25,7 +25,7 @@ An array of matching sites
 }
 ```
 
-### [Example](https://repl.it/@AndrewCowley/getsitelist-example)
+[Live example on Repl.it](https://repl.it/@AndrewCowley/getsitelist-example)
 
 ### Notes
 
