@@ -15,10 +15,10 @@ The data provided by the web service is excellent, but the documentation provide
 
 All data sourced from the NSW Water web service is subject to the [WaterNSW copyright notice](https://www.waternsw.com.au/copyright).
 
-The information for this document comes from the following sources:
+Most of the information for this document comes from the following sources:
 
   - Kisters [web service documentation](http://kisters.com.au/doco/hydllp.htm)
-  - Tony Caine's github repo
+  - [This github repository](https://github.com/tonycaine/pages-for-appchallenge)
   
 Thank you to:
   - [Kisters](http://kisters.com.au/) support for answering my questions around the Hydstra system.
