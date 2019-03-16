@@ -132,14 +132,37 @@ TODO
 | fields    | array           | Fields that will be returned in the response             |
 | get_elev  | boolean         | If true, site elevation will be returned in the response |
 
+### Example query object
+
+```JSON
+{
+  "function": "get_site_geojson",
+  "version": 2,
+  "params": {     
+    "site_list": '',
+    "get_elev": 1,
+    "fields": [*]
+  }
+}
+```
+
 ### Returns
 TODO
+```JSON
+```
+
 ## get_datasources_by_site
 TODO
+```JSON
+```
 ### Parameters
 TODO
+```JSON
+```
 ## get_variable_list
 TODO
+```JSON
+```
 ### Parameters
 
 | parameter  | type            | description                                     |
@@ -149,14 +172,24 @@ TODO
 
 ### Returns
 TODO
+```JSON
+```
 ## get_db_info
 TODO
+```JSON
+```
 ### Parameters
 TODO
+```JSON
+```
 ### Returns
 TODO
+```JSON
+```
 ## Site list expressions
 TODO
+```JSON
+```
 ## Data types and formats
 
 **Booleans:** 0 or 1, `true` or `false` is also valid.
