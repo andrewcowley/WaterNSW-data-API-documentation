@@ -100,15 +100,15 @@ Error codes are provided in the API response. `"err_num": 0` represents a reques
 
 ### Sites
 
-TODO
+Each monitoring site has an id. Specific sites can be found by manually going through the list of sites on the WaterNSW website or can be targeted in various ways by a few different API methods.
 
-### Datasources
+### Data sources
 
-TODO
+Each site has a number of data sources associated with it. They are represented by short codes such as 'CP', 'A' or 'PROV'. It isn't always clear which data source is best to use when requesting data from a site. 'CP' is the best data source to try for most sites.
 
 ### Variables
 
-A variable corresponds to a site measurement. For example 100.00 refers to the level of a river measured in metres. Some API requests require the variable to be specified in the request. Responses use the `v` key to specify which measurement is being returned.
+A variable corresponds to a site measurement. For example 100.00 refers to the level of a river measured in metres. Some API requests require the variable range to be specified in the request.
 
 ```
 {
@@ -117,6 +117,16 @@ A variable corresponds to a site measurement. For example 100.00 refers to the l
 }
 
 ```
+
+Responses use the `v` key to specify which measurement is being returned. In the following example `"v": 100.00` refers to the river/stream height in metres.
+
+ ```JSON
+ {
+  "v": 100.00,
+  "q": 125,
+  "t": 2.4
+ }
+ ```
 
 #### Rivers and streams
 
