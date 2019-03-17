@@ -141,7 +141,7 @@ TODO
   "params": {     
     "site_list": '',
     "get_elev": 1,
-    "fields": [*]
+    "fields": ['zone']
   }
 }
 ```
