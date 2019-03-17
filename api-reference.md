@@ -147,8 +147,32 @@ TODO
 ```
 
 ### Returns
-TODO
+
 ```JSON
+{
+   "error_num":0,
+   "buff_required":242,
+   "return":{
+      "features":[
+         {
+            "properties":{
+               "zone":56
+            },
+            "geometry":{
+               "coordinates":[
+                  152.1713,
+                  -28.6448
+               ],
+               "type":"Point"
+            },
+            "id":"204006",
+            "type":"Feature"
+         }
+      ],
+      "type":"FeatureCollection"
+   },
+   "buff_supplied":1000
+}
 ```
 
 [Live example on Repl.it](https://repl.it/@AndrewCowley/getsitegeojson-example)
