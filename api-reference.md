@@ -201,14 +201,22 @@ TODO
 ```JSON
 ```
 ## get_db_info
-TODO
-```JSON
-```
+
 ### Parameters
-TODO
-```JSON
-```
-### Returns
+| parameter       | type            | description                                                                                                                                                                                                            |
+|-----------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| table_name      | string          | The table name from the database. E.g. 'site'                                                                                                                                                                          |
+| return_type     | string          | Specifies the data structure returned. Values are either 'hash' or 'array                                                                                                                                              |
+| filter_values   |                 | (*optional*)                                                                                                                                                                                                           |
+| field_list      | array           | (*optional*) An array of field names to return from the database                                                                                                                                                       |
+| sitelist_filter | sitelist filter | (*optional*) A valid sitelist filter expression                                                                                                                                                                        |
+| geo_filter      | array           | (*optional*) Filter based on latitude and longitude. Circle: ['lat', 'lng], Rectangle: [['top left lat', 'top_left_long'], ['bottom_right_lat, bottom_right_long']] Region: [[lat, long], [lat, long], [lat, long]...] |
+| complex_filter  |                 | (*optional*) Filter the results based on the values of fields.                                                                                                                                                         |
+| raw_db_filter   |                 | (*optional*) TODO                                                                                                                                                                                                      |
+| order           | string          | (*optional*) Which field to order the results by                                                                                                                                                                       |
+| start_from      |                 | (*optional*)                                                                                                                                                                                                           |
+| return_limit    |                 | (*optional*) Limits the number of rows returned                                                                                                                                                                        |
+| decodes         |                 | ???                                                                                                                                                                                                                    |### Returns
 TODO
 ```JSON
 ```
