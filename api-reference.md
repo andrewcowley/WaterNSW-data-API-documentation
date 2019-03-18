@@ -187,8 +187,7 @@ TODO
 ```
 ## get_variable_list
 TODO
-```JSON
-```
+
 ### Parameters
 
 | parameter  | type            | description                                     |
@@ -196,9 +195,104 @@ TODO
 | site_list  | string or array | A valid site list expression                    |
 | datasource | string          | The datasource from which to list the variables |
 
-### Returns
-TODO
+### Example query object
+
 ```JSON
+{
+   "function":"get_variable_list",
+   "version":1,
+   "params":{
+      "site_list":"204006",
+      "datasource":"CP"
+   }
+}
+```
+### Returns
+
+```JSON
+{
+   "error_num":0,
+   "buff_required":1433,
+   "return":{
+      "sites":[
+         {
+            "site_details":{
+               "timezone":"10.0",
+               "short_name":"PEEL @ TAMWORTH",
+               "name":"PEEL RIVER AT TAMWORTH"
+            },
+            "variables":[
+               {
+                  "period_end":"20190318180000",
+                  "period_start":"19930720151500",
+                  "subdesc":"",
+                  "variable":"100.00",
+                  "units":"Metres",
+                  "name":"Stream Water Level"
+               },
+               {
+                  "period_end":"20081214000000",
+                  "period_start":"19100114000000",
+                  "subdesc":"Externally supplied peak",
+                  "variable":"100.09",
+                  "units":"Metres",
+                  "name":"Stream Water Level"
+               },
+               {
+                  "period_end":"20170101000000",
+                  "period_start":"19250101000000",
+                  "subdesc":"monthly max",
+                  "variable":"141.01",
+                  "units":"Megalitres\/Day",
+                  "name":"Discharge Rate"
+               },
+               {
+                  "period_end":"20170101000000",
+                  "period_start":"19250101000000",
+                  "subdesc":"Monthly Min",
+                  "variable":"141.02",
+                  "units":"Megalitres\/Day",
+                  "name":"Discharge Rate"
+               },
+               {
+                  "period_end":"20170101000000",
+                  "period_start":"19250101000000",
+                  "subdesc":"",
+                  "variable":"151.00",
+                  "units":"Megalitres",
+                  "name":"Discharge Volume"
+               },
+               {
+                  "period_end":"20170101000000",
+                  "period_start":"19250101000000",
+                  "subdesc":"Monthly Tot",
+                  "variable":"151.01",
+                  "units":"Megalitres",
+                  "name":"Discharge Volume"
+               },
+               {
+                  "period_end":"21010101000000",
+                  "period_start":"18010101000000",
+                  "subdesc":"Yearly Total",
+                  "variable":"151.02",
+                  "units":"Megalitres",
+                  "name":"Discharge Volume"
+               },
+               {
+                  "period_end":"20190318180000",
+                  "period_start":"20171017001500",
+                  "subdesc":"",
+                  "variable":"300.00",
+                  "units":"Volts",
+                  "name":"Logger Battery Voltage"
+               }
+            ],
+            "site":"419009"
+         }
+      ]
+   },
+   "buff_supplied":1504
+}
 ```
 ## get_db_info
 
