@@ -22,8 +22,7 @@ A list of monitoring sites that match a provided site list expression.
 }
 ```
 
-### Returns
-An array of matching sites
+### Example response
 
 ```JSON
 {
@@ -352,9 +351,14 @@ TODO
 ```JSON
 ```
 ## Site list expressions
-TODO
-```JSON
+
+A site list expression is a way of specifying a list of sites as a parameter to an API function. The simplest site expression is one specific site id.
 ```
+...
+"site_list": "210102"
+...
+```
+
 ## Data types and formats
 
 **Booleans:** 0 or 1, `true` or `false` is also valid.
