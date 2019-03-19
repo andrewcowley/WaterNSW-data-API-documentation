@@ -60,30 +60,67 @@ An array of matching sites
 
 ```JSON
 {
-  "function": "get_latest_ts_values",
-  "version": 2,
-  "params": {
-    "site_list": "MATCH(203019)",
-    "datasource": "CP",
-    "tracelist": {
-      "varfrom": 100.00,
-      "varto": 100.00,
-      "accum_period": 0,
-      "accum_partial": 0,
-      "output_time": "start",
-      "daystart": 0900,
-      "loopback": 120,
-      "anyqual": 0,
-      "now": 201903111200
-    }
-  }
+   "function":"get_latest_ts_values",
+   "version":2,
+   "params":{
+      "site_list":"203014",
+      "datasource":"CP",
+      "trace_list":[
+         {
+            "varfrom":100,
+            "varto":100
+         },
+         {
+            "varfrom":"141",
+            "varto":"141"
+         }
+      ]
+   }
 }
 ```
 
 ### Returns
-TODO
-```JSON
 
+```JSON
+{
+   "error_num":0,
+   "buff_required":367,
+   "return":{
+      "203014":[
+         {
+            "values":[
+               {
+                  "time_end":"",
+                  "v":"0.888",
+                  "q":130,
+                  "p":"",
+                  "trend":"0",
+                  "time":"20190319130000",
+                  "time_start":""
+               }
+            ],
+            "varto":"100.00",
+            "varfrom":"100.00"
+         },
+         {
+            "values":[
+               {
+                  "time_end":"",
+                  "v":"89.438",
+                  "q":140,
+                  "p":"",
+                  "trend":"-",
+                  "time":"20050224040000",
+                  "time_start":""
+               }
+            ],
+            "varto":"141.00",
+            "varfrom":"141.00"
+         }
+      ]
+   },
+   "buff_supplied":1000
+}
 ```
 ## get_sites_by_datasource
 
