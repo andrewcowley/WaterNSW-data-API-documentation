@@ -4,7 +4,7 @@ This guide outlines the basics of making a request to the NSW Water API and what
 
 ## Audience
 
-This document is written for web and mobile application developers, but the basics are the same for anyone looking to request data from the API. It is assumed that the reader has familiarity with making HTTP requests from their programming language, or tool, of choice.
+This document is written for web and mobile application developers, however the basics are the same for anyone looking to request data from this API. It is assumed that the reader has familiarity with making HTTP requests from their programming language, or tool, of choice.
 
 ## Making a request
 
@@ -18,15 +18,14 @@ The specifics of the request are made by providing one required URL query parame
 
 Details of the request to the API are provided in a JSON object as the first parameter.
 
-This object requires three parameters:
+This object requires three top level parameters:
 
-  1. `function` - The function that is called on the API backend
-  2. `version` -  The version of the API(or function?) being called
-  3. `parameters` - parameters being passed to the function
-  
-  All functions and their usage is provided in the [API reference](/api-reference.md).
+  1. `function` - This specifies the function that is called on the API backend. All functions and their usage are provided in the [API reference](/api-reference.md).
+  2. `version` -  The version of the function being called.
+  3. `parameters` - The parameters being passed to the function.
   
   For example a request to the [get_site_list](/api-reference.md#get_site_list) function:
+  
   ```JSON
   {
     "function": "get_site_list",
