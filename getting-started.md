@@ -16,13 +16,13 @@ The specifics of the request are made by providing one required URL query parame
 
 ### Required query parameter
 
-Details of the request to the API are provided in a JSON object as the first parameter.
+Details of the request to the API are provided in a JSON object as the first URL query parameter.
 
-This object requires three top level parameters:
+This object requires three top level keys:
 
-  1. `function` - This specifies the function that is called on the API backend. All functions and their usage are provided in the [API reference](/api-reference.md).
-  2. `version` -  The version of the function being called.
-  3. `parameters` - The parameters being passed to the function.
+  1. `function`: This specifies the function that is called on the API backend. All functions and their usage are provided in the [API reference](/api-reference.md).
+  2. `version`:  The version of the function being called.
+  3. `parameters`: The parameters being passed to the function.
   
   For example a request to the [get_site_list](/api-reference.md#get_site_list) function:
   
@@ -41,33 +41,31 @@ This object requires three top level parameters:
  https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
  ```
 
-### Optional parameters
+### Optional URL query parameters
 
   1. **ver**
     - `2`: Modifies keys in the returned response are modified to remove prefixes that were present in version. **Recommended**
   2. **mime**
-    - `csv`: Response has content type header set to CSV
+    - `csv`: The response has its HTTP `content-type` header set to `text/csv`
   3. **format**
-    - `csv`: Response returned in CSV format
-    - `csvc`: Response returned in CSV format. Rows have trailing commas.
+    - `csv`: The response is returned in CSV format
+    - `csvc`: The response returned in CSV format with rows have trailing commas.
 
-### Request methods
+### Request HTTP methods
 
 Requests to the NSW Water API can be made using either HTTP `GET` or `POST` methods.
 
-For `GET` requests URL parameters are added to the URL to form specific requests. There is one required parameter and various option parameters.
-
-For `POST` requests the parameters are added to the request body.
+For `GET` requests URL parameters are added to the URL to form requests. For `POST` requests the parameters are added to the request body.
 
 #### Browser XMLHttpRequests
 
-Making XMLHttpRequests from the browser is not currently possible. The NSW Water API does not provide suitable headers to allow cross origin requests.
+Making XMLHttpRequests from the browser is not currently possible. The NSW Water API does not support cross origin requests.
 
 ## Responses
 
 ### Successful responses
 
-Successful responses return JSON by default. The returned JSON object contains some metadata about the response as well as the returned data. A successful response takes the following form:
+Successful responses return JSON by default. The returned JSON object contains metadata about the response and the returned data. A successful response takes the following form:
 
 ```JSON
 {
@@ -81,10 +79,10 @@ Successful responses return JSON by default. The returned JSON object contains s
 
 A successful response has four top level parameters:
 
-  1. err_num: This will always be 0 to indicate response was successful.
-  2. buff_required: The size in bytes of the response.
-  3. buff_supplied: The bytes allocated to the response by the API backend.
-  4. return: The data returned from the API in response to the query object in the request.
+  1. `err_num`: This will always be 0 to indicate response was successful.
+  2. `buff_required`: The size in bytes of the response.
+  3. `buff_supplied`: The bytes allocated to the response by the API backend.
+  4. `return`: The data returned from the API in response to the query object in the request.
 
 ### Errors
 
