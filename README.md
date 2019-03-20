@@ -25,7 +25,7 @@ Thank you to:
   
 ## Contributing
 
-If you wish to contribute, thank you! Please read [CONTRIBUTING.md](/CONTRIBUTING.md) making special note of the [Code of Conduct](/CONTRIBUTING.md#code-of-conduct)
+If you wish to contribute, thank you! Please read [CONTRIBUTING.md](/CONTRIBUTING.md) making special note of the [Code of Conduct](/CONTRIBUTING.md#code-of-conduct).
 
 ## License
 
