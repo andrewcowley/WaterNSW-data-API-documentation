@@ -20,9 +20,9 @@ Details of the request to the API are provided in a JSON object as the first URL
 
 This object requires three top level keys:
 
-  1. `function`: This specifies the function that is called on the API backend. All functions and their usage are provided in the [API reference](/api-reference.md).
-  2. `version`:  The version of the function being called.
-  3. `parameters`: The parameters being passed to the function.
+  1. `function`_(string)_: This specifies the function that is called on the API backend. All functions and their usage are provided in the [API reference](/api-reference.md).
+  2. `version`_(number)_:  The version of the function being called.
+  3. `parameters`_(object)_: The parameters being passed to the function.
   
   For example a request to the [get_site_list](/api-reference.md#get_site_list) function:
   
