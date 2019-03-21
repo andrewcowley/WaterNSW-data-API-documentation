@@ -13,7 +13,7 @@ The two main parts of the documentation are:
   - [Getting started](/getting-started.md):  Making requests to the API and what can be expected in response.
   - [API reference](/api-reference.md): The API reference contains information on the possible API calls and examples of their use.
 
-Both sections are a work in progress.
+**Both sections are works in progress.**
 
 ## Credits
 
