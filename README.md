@@ -2,14 +2,17 @@
 
 [WaterNSW](https://www.waternsw.com.au/) monitors the quality and levels of rivers, dams and groundwater across the state of New South Wales, Australia. WaterNSW provides access to this data [via their website](https://realtimedata.waternsw.com.au/), [mobile apps](https://www.waternsw.com.au/supply/regional-nsw/real-time-data#footer) as well as a web service.
 
-The web service allows a user to request realtime and historical data for monitoring site via its HTTP interface and have the data returned in JSON or CSV format.
+The web service allows a user to request realtime and historical timeseries data for monitoring site via its HTTP interface and have the data returned in JSON or CSV format. This 'unofficial' guide aims to make the data more accessible by providing enough 
+documentation to cover common use cases.
 
-The data provided by the web service is excellent, but the documentation provided on using the web service is lacking. This 'unofficial' documentation aims to make the data more accessible to developers by providing a Developer guide, and API reference.
+## Dive in
 
-## Contents
+The two main parts of the documentation are:
 
-  - [Getting started](/getting-started.md) [WIP]
-  - [API reference](/api-reference.md) [WIP]
+  - [Getting started](/getting-started.md):  Making requests to the API and what can be expected in response.
+  - [API reference](/api-reference.md): The API reference contains information on the possible API calls and examples of their use.
+
+Both sections are a work in progress.
 
 ## Credits
 
