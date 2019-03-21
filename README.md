@@ -4,7 +4,7 @@
 
 The web service allows a user to request realtime and historical timeseries data for monitoring site via its HTTP interface and have the data returned in JSON or CSV format. This 'unofficial' guide aims to make this data more accessible.
 
->**Please note:** This documentation is not exhaustive. The intention is to cover common use cases and recommend approaches to shorten the learning curve.
+>This documentation is not exhaustive. The intention is to cover common use cases and recommend approaches to shorten the learning curve.
 
 ## Dive in
 
