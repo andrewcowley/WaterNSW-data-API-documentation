@@ -1,6 +1,6 @@
 # Getting started
 
-This guide outlines the basics of making a request to the NSW Water API and what can be expected in response. 
+This guide outlines how to make a request to the NSW Water API and what will be returned in response.
 
 ## Audience
 
