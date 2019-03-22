@@ -1,5 +1,13 @@
 # API reference
 
+- [get_site_list](#get_site_list)
+- [get_latest_ts_values](#get_latest_ts_values)
+- [get_sites_by_datasource](#get_sites_by_datasource)
+- [get_site_geojson](#get_site_geojson)
+- [get_datasources_by_site](#get_datasources_by_site)
+- [get_variable_list](#get_variable_list)
+- [get_db_info](#get_db_info)
+
 ## get_site_list
 
 A list of monitoring sites that match a provided site list expression.
