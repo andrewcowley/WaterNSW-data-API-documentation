@@ -52,7 +52,8 @@ A list of monitoring sites that match a provided site list expression.
 |            | accum_partial   |                                                                 |
 |            | daystart        | *(optional)* HH:mm Defaults to midnight                         |
 |            | loopback        | *(optional)* The number of minutes to look back for last value. |
-|            | anyqual         | *(optional)* If 0 the last quality data point will be returned. If 1 the last data point will be returned regardless of quality|
+|            | anyqual         | *(optional)* If 0 the last quality data point will be returned. If 1 the last data point will be 
+ed regardless of quality|
 |            | now             | *(optional)* Lookback starts from current time. Can be overridden with this value. |
 
 ### Example query object
@@ -78,7 +79,7 @@ A list of monitoring sites that match a provided site list expression.
 }
 ```
 
-### Returns
+### Response
 
 ```JSON
 {
@@ -141,7 +142,7 @@ A list of monitoring sites that match a provided site list expression.
 }
 ```
 
-### Returns
+### Response
 
 ```JSON
 {
@@ -182,7 +183,7 @@ A list of monitoring sites that match a provided site list expression.
 }
 ```
 
-### Returns
+### Response
 
 ```JSON
 {
@@ -243,7 +244,7 @@ TODO
    }
 }
 ```
-### Returns
+### Response
 
 ```JSON
 {
