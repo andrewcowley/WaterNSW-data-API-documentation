@@ -130,10 +130,10 @@ Responses use the `v` key to specify which measurement is being returned. In the
 | Variable number | Name                            | Data type     |
 |-----------------|---------------------------------|---------------|
 | 10.00           | Rainfall (mm)                   | Daily total   |
-| 100.00          | Level (Metres)                  | Instantaneous |
+| 100.00          | Level (M)                       | Instantaneous |
 | 141.00          | Discharge (ML/d)                | Instantaneous |
 | 2010.00         | Electrical conductivity (uS/cm) | Instantaneous |
-| 2080.00         | Temperature (C)                 | Instantaneous |
+| 2080.00         | Temperature (&deg;C)            | Instantaneous |
 
 #### Dams
 
@@ -148,7 +148,7 @@ Responses use the `v` key to specify which measurement is being returned. In the
 |-----------------|-------------------------------------------------|-----------|
 | 110.00          | Bore water level below measuring point (Meters) |           |
 | 110.00 - 115.00 | Groundwater Level - AHD (Meters)                |           |
-| 20.80.00        | Water temp. (C)                                 |           |
+| 20.80.00        | Water temp. (&deg;C)                            |           |
 
 ### Quality codes
 
