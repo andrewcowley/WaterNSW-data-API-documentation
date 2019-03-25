@@ -12,6 +12,8 @@
 
 A list of monitoring sites that match a provided site list expression.
 
+[Node.js example on Repl.it](https://repl.it/@AndrewCowley/getsitelist-example)
+
 ### Parameters
 
 | parameter | type            | description                   |
@@ -42,8 +44,6 @@ A list of monitoring sites that match a provided site list expression.
   "buff_supplied":1000
 }
 ```
-
-[Live example on Repl.it](https://repl.it/@AndrewCowley/getsitelist-example)
 
 ## get_latest_ts_values
 
@@ -169,6 +169,8 @@ ed regardless of quality|
 ```
 ## get_site_geojson
 
+[Node.js example on Repl.it](https://repl.it/@AndrewCowley/getsitegeojson-example)
+
 ### Parameters
 
 | parameter | type            | description                                              |
@@ -220,8 +222,6 @@ ed regardless of quality|
 }
 ```
 
-[Live example on Repl.it](https://repl.it/@AndrewCowley/getsitegeojson-example)
-
 ## get_datasources_by_site
 TODO
 ```JSON
@@ -254,7 +254,7 @@ TODO
 ```
 ### Response
 
-```JSON
+```
 {
    "error_num":0,
    "buff_required":1433,
@@ -275,62 +275,7 @@ TODO
                   "units":"Metres",
                   "name":"Stream Water Level"
                },
-               {
-                  "period_end":"20081214000000",
-                  "period_start":"19100114000000",
-                  "subdesc":"Externally supplied peak",
-                  "variable":"100.09",
-                  "units":"Metres",
-                  "name":"Stream Water Level"
-               },
-               {
-                  "period_end":"20170101000000",
-                  "period_start":"19250101000000",
-                  "subdesc":"monthly max",
-                  "variable":"141.01",
-                  "units":"Megalitres\/Day",
-                  "name":"Discharge Rate"
-               },
-               {
-                  "period_end":"20170101000000",
-                  "period_start":"19250101000000",
-                  "subdesc":"Monthly Min",
-                  "variable":"141.02",
-                  "units":"Megalitres\/Day",
-                  "name":"Discharge Rate"
-               },
-               {
-                  "period_end":"20170101000000",
-                  "period_start":"19250101000000",
-                  "subdesc":"",
-                  "variable":"151.00",
-                  "units":"Megalitres",
-                  "name":"Discharge Volume"
-               },
-               {
-                  "period_end":"20170101000000",
-                  "period_start":"19250101000000",
-                  "subdesc":"Monthly Tot",
-                  "variable":"151.01",
-                  "units":"Megalitres",
-                  "name":"Discharge Volume"
-               },
-               {
-                  "period_end":"21010101000000",
-                  "period_start":"18010101000000",
-                  "subdesc":"Yearly Total",
-                  "variable":"151.02",
-                  "units":"Megalitres",
-                  "name":"Discharge Volume"
-               },
-               {
-                  "period_end":"20190318180000",
-                  "period_start":"20171017001500",
-                  "subdesc":"",
-                  "variable":"300.00",
-                  "units":"Volts",
-                  "name":"Logger Battery Voltage"
-               }
+               ...
             ],
             "site":"419009"
          }
