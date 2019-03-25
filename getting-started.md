@@ -152,4 +152,13 @@ Responses use the `v` key to specify which measurement is being returned. In the
 
 ### Quality codes
 
-TODO
+Each data point is associated with a quality code. The quality code indicates if the data point has been reviewed or is the raw value from the telemetry.
+
+|Quality code | Meaning                        |
+|-------------|--------------------------------|
+| 10          | Good                           |
+| 15          | Water below threshold (no flow)|
+| 20          | Fair                           |
+| 30          | Poor                           |
+| 60          | Estimate                       |
+| 130         | Interim                        |
