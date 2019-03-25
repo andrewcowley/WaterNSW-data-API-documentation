@@ -12,13 +12,13 @@
 
 A list of monitoring sites that match a provided [site list expression](#site_list_expressions).
 
-[Node.js example on Repl.it](https://repl.it/@AndrewCowley/getsitelist-example)
+View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-example) on Repl.it
 
 ### Parameters
 
-| parameter | type            | required | description                   |
-|-----------|-----------------|----------|-------------------------------|
-| site_list | string          | Yes      | A valid site list expression  |
+| parameter | type            | required | description                                             |
+|-----------|-----------------|----------|---------------------------------------------------------|
+| site_list | string          | Yes      | A valid [site list expression](#site_list_expressions)  |
 
 ### Example query object
 
