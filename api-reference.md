@@ -10,7 +10,7 @@
 
 ## get_site_list
 
-A list of monitoring sites that match a provided [site list expression](#site_list_expressions).
+A list of monitoring sites that match a provided [site list expression](#site-list-expressions).
 
 View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-example) on Repl.it
 
@@ -18,7 +18,7 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 
 | parameter | type            | required | description                                             |
 |-----------|-----------------|----------|---------------------------------------------------------|
-| site_list | string          | Yes      | A valid [site list expression](#site_list_expressions)  |
+| site_list | string          | Yes      | A valid [site list expression](#site-list-expressions)  |
 
 ### Example query object
 
