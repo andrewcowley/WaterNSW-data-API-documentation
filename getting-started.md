@@ -57,9 +57,9 @@ Requests to the NSW Water API can be made using either HTTP `GET` or `POST` meth
 
 For `GET` requests URL parameters are added to the URL to form requests. For `POST` requests the parameters are added to the request body.
 
-#### Browser XMLHttpRequests
+#### Requests from the browser
 
-Making XMLHttpRequests from the browser is not currently possible. The NSW Water API does not support cross origin requests.
+Making a XMLHttpRequest/AJAX request from the browser is not possible as the NSW Water API does not support cross origin requests. JSONP can be used to get past the cross origin restrictions.
 
 ## Responses
 
