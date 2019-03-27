@@ -53,7 +53,7 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 |------------|------------------|-----------|-----------------------------------------------------|
 | site_list  | string           | Yes       | A valid site list expression                        |
 | datasource | string or array  | Yes       | The datasource from which the data will be provided |
-| trace_list | object           | Yes       | See [trace_list object](#trace_list object) below.  |
+| trace_list | object           | Yes       | See [trace_list object](#trace_list-object) below.  |
 
 #### trace_list object
 
