@@ -49,20 +49,24 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 
 ### Paramters
 
-| parameter  | type            | description                                         |
-|------------|-----------------|-----------------------------------------------------|
-| site_list  | string or array | A valid site list expression                        |
-| datasource | string or array | The datasource from which the data will be provided             |
-| trace_list | object          |                                                                 |
-|            | varfrom         | Variable number to start from.                                  |
-|            | varto           | Variable number to go to.                                       |
-|            | accum_period    | *(optional)* In minutes. Default is 0                           |
-|            | accum_partial   |                                                                 |
-|            | daystart        | *(optional)* HH:mm Defaults to midnight                         |
-|            | loopback        | *(optional)* The number of minutes to look back for last value. |
-|            | anyqual         | *(optional)* If 0 the last quality data point will be returned. If 1 the last data point will be 
-ed regardless of quality|
-|            | now             | *(optional)* Lookback starts from current time. Can be overridden with this value. |
+| parameter  | type             | required  | description                                         |
+|------------|------------------|-----------|-----------------------------------------------------|
+| site_list  | string           | Yes       | A valid site list expression                        |
+| datasource | string or array  | Yes       | The datasource from which the data will be provided |
+| trace_list | object           | Yes       | See [trace_list object](#trace_list object) below.  |
+
+#### trace_list object
+
+| parameter      | type    | required  | description                                         |
+|----------------|---------|-----------|-----------------------------------------------------|
+| varfrom        | number  | Yes       | Variable number to start from.                      |
+| varto          | number  | Yes       | Variable number to go to.                           |
+| accum_period   | number  | No        |  In minutes. Default is 0                           |
+| accum_partial  | number  | No        |                                                     |
+| daystart       | number  | No        | HH:mm Defaults to midnight                          |
+| loopback       | number  | No        | The number of minutes to look back for last value.  |
+| anyqual        | number  | No        |0: last quality data point will be returned. If 1 last data point will be returned regardless of quality|
+| now            | boolean | No        | Lookback starts from current time. Can be overridden with this value. |
 
 ### Example query object
 
