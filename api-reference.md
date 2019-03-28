@@ -47,6 +47,8 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 
 ## get_latest_ts_values
 
+Returns the latest values in the timeseries for the specified sites and variables.
+
 ### Paramters
 
 | parameter  | type             | required  | description                                         |
@@ -61,10 +63,10 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 |----------------|---------|-----------|-----------------------------------------------------|
 | varfrom        | number  | Yes       | Variable number to start from.                      |
 | varto          | number  | Yes       | Variable number to go to.                           |
-| accum_period   | number  | No        |  In minutes. Default is 0                           |
-| accum_partial  | number  | No        |                                                     |
+| accum_period   | number  | No        | In minutes. Default is 0                            |
+| accum_partial  | number  | No        | Defaults to 0. If 0 the last accumulated period is used. If 1 the last two accumulated periods are used. |
 | daystart       | number  | No        | HH:mm Defaults to midnight                          |
-| loopback       | number  | No        | The number of minutes to look back for last value.  |
+| lookback       | number  | No        | The number of minutes to look back for last value.  |
 | anyqual        | number  | No        |0: last quality data point will be returned. If 1 last data point will be returned regardless of quality|
 | now            | boolean | No        | Lookback starts from current time. Can be overridden with this value. |
 
