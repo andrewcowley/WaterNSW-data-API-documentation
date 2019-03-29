@@ -175,6 +175,8 @@ Returns the latest values in the timeseries for the specified sites and variable
 ```
 ## get_site_geojson
 
+Returns an array of one or more geojson features of type point that correspond to sites matching the site list expression.
+
 [Node.js example on Repl.it](https://repl.it/@AndrewCowley/getsitegeojson-example)
 
 ### Parameters
@@ -192,7 +194,7 @@ Returns the latest values in the timeseries for the specified sites and variable
   "function": "get_site_geojson",
   "version": 2,
   "params": {     
-    "site_list": '',
+    "site_list": '204006',
     "get_elev": 1,
     "fields": ['zone']
   }
