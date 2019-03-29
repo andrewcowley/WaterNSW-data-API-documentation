@@ -90,7 +90,11 @@ A successful response has four top level parameters:
 
 ### Errors
 
-Error codes are provided in the API response. `"err_num": 0` represents a request with no errors. If an error is present an `err_msg` key will be present with the value outlining the error message.
+Not providing a valid `User-Agent` header will result in a `502 Bad Gateway` error.
+
+If there is an error in the client request 4XX series HTTP codes **are not returned**. Error codes are instead returned in the API response with a `200 OK` code. 
+
+`"err_num": 0` represents a request with no errors. If an error is present an `err_msg` key will be present with the value outlining the error message.
 
 ```JSON
 {
@@ -98,6 +102,9 @@ Error codes are provided in the API response. `"err_num": 0` represents a reques
     "err_msg": "Unknown \"function\" value [get_dsb_info]"
 }
 ```
+#### Common error codes
+
+TODO
 
 ### Sites
 
