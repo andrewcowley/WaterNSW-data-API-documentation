@@ -104,9 +104,13 @@ If there is an error in the client request 4XX series HTTP codes **are not retur
     "err_msg": "Unknown \"function\" value [get_dsb_info]"
 }
 ```
-#### Common error codes
+#### Common error codes [WIP]
 
-TODO
+| Error code | Description                 |
+|------------|-----------------------------|
+| 0          | No error                    |
+| 100        | Invalid function parameter  |
+| 120        | Invalid top level parameter |
 
 ### Sites
 
