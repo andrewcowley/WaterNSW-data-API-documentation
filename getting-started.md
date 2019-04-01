@@ -8,13 +8,17 @@ This document is written for web and mobile application developers, however the 
 
 ## Making a request
 
+There are five elements to a successful request:
+
+### 1. Base URL
+
 All requests to the NSW Water API use the following URL:
 
 `https://realtimedata.waternsw.com.au/cgi/webservice.pl`
 
 The specifics of the request are made by providing one required URL query parameter. There is one required query parameter and three optional query parameters.
 
-### Required query parameter
+### 2. Required query parameter
 
 Details of the request to the API are provided in a JSON object as the first URL query parameter.
 
@@ -41,7 +45,7 @@ This object requires three top level keys:
  https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
  ```
 
-### Optional URL query parameters
+### 3. Optional URL query parameters
 
   1. **ver**
     - `2`: Modifies keys in the returned response are modified to remove prefixes that were present in version. **Recommended**
@@ -51,13 +55,13 @@ This object requires three top level keys:
     - `csv`: The response is returned in CSV format
     - `csvc`: The response returned in CSV format with rows have trailing commas.
 
-### Request HTTP methods
+### 4. Request HTTP methods
 
 Requests to the NSW Water API can be made using either HTTP `GET` or `POST` methods.
 
 For `GET` requests URL parameters are added to the URL to form requests. For `POST` requests the parameters are added to the request body.
 
-### Required `User-Agent` HTTP header
+### 5. Required `User-Agent` HTTP header
 
 Requests to the API will fail with a HTTP 502 error unless a `User-Agent` header, with a non-empty string as a value, is provided. For example: `User-Agent: 'APIDocs'`. Some HTTP clients and libraries set a default `User-Agent` header. Others, such as the [Node.js `https` module](https://nodejs.org/api/https.html) need the `User-Agent` to be specified.
 
