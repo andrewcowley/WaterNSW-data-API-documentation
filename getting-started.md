@@ -87,7 +87,7 @@ Successful responses return JSON by default. The returned JSON object contains m
 
 A successful response has four top level parameters:
 
-  1. `err_num`: Will be 0 to indicate response was successful.
+  1. `err_num`: Will be 0 to indicate a successful response.
   2. `buff_required`: The size in bytes of the response.
   3. `buff_supplied`: The bytes allocated to the response by the system.
   4. `return`: The data returned from the API in response to the query object in the request.
