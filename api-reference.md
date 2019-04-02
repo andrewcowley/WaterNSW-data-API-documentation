@@ -316,10 +316,15 @@ TODO
 
 A site list expression is a way of specifying a list of sites as a parameter to an API function. The simplest site expression is one specific site id.
 ```
-...
 "site_list": "210102"
-...
 ```
+A comma seperated list of specific sites is also valid.
+```
+"site_list": "207004, 207006, 207008"
+```
+More complicated expressions can also be created.
+
+TODO
 
 ## Data types and formats
 
