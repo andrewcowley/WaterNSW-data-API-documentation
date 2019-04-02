@@ -49,7 +49,7 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 
 Returns the latest values in the timeseries for the specified sites and variables.
 
-### Paramters
+### Parameters
 
 | parameter  | type             | required  | description                                         |
 |------------|------------------|-----------|-----------------------------------------------------|
@@ -138,7 +138,7 @@ Returns the latest values in the timeseries for the specified sites and variable
 ```
 ## get_sites_by_datasource
 
-### Paramters
+### Parameters
 
 | parameter   | type            | description                         |
 |-------------|-----------------|-------------------------------------|
