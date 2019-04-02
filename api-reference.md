@@ -329,4 +329,5 @@ TODO
 ## Data types and formats
 
 **Booleans:** 0 or 1, `true` or `false` is also valid.
+
 **Date format:** yyyymmddhhmmss For example: 11am on 12 January 2019 would be represented as 20190112110000.
