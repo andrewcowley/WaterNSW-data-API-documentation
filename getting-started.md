@@ -6,9 +6,9 @@ This guide outlines how to make a request to the NSW Water API and what will be 
 
 This document is written for web and mobile application developers, however the principles are the same for anyone looking to request data from this API. It is assumed that the reader has familiarity with making HTTP requests from their programming language, or tool, of choice. All examples in the guide are written in [Node.js](https://nodejs.org/).
 
-## Making a request
+## Make a request
 
-There are five elements to a successful request:
+There are five elements to a successful request.
 
 ### 1. Base URL
 
