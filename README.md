@@ -4,6 +4,8 @@
 
 The web service allows a user to request realtime and historical timeseries data for monitoring site via HTTP and have the data returned in JSON or CSV format.
 
+This documetation aims to provide someone with some knowledge of requesting data via an HTTP API enough information to access the water monitoring data. 
+
 ## Dive in
 
 The two main parts of the documentation are:
