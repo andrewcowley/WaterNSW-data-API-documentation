@@ -2,7 +2,7 @@
 
 [WaterNSW](https://www.waternsw.com.au/) monitors rivers, dams and groundwater across the state of New South Wales, Australia for quality and level. This data is made available [via their website](https://realtimedata.waternsw.com.au/), [mobile apps](https://www.waternsw.com.au/supply/regional-nsw/real-time-data#footer) as well as a web service.
 
-The web service allows a user to request realtime and historical timeseries data for monitoring site via its HTTP interface and have the data returned in JSON or CSV format. This 'unofficial' guide aims to make this data more accessible.
+The web service allows a user to request realtime and historical timeseries data for monitoring site via HTTP and have the data returned in JSON or CSV format.
 
 ## Dive in
 
