@@ -233,13 +233,24 @@ Fields include details of the requested site.
 ```
 
 ## get_datasources_by_site
-TODO
-```JSON
-```
+
+Returns a list of datasources for the requested sites.
+
+Example:
+
 ### Parameters
-TODO
-```JSON
-```
+
+| parameter      | type    | required  | description                                                       |
+|----------------|---------|-----------|-------------------------------------------------------------------|
+| site_list      | string  | Yes       | A valid sitelist expression                                       |
+| ts_classes     | array   | No        | Unknown. Valid values are one or more of ARCHIVE, WORK, AUX, TEMP |
+
+### Example query object
+
+
+
+### Example response
+
 ## get_variable_list
 TODO
 
