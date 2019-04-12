@@ -235,7 +235,7 @@ Fields include details of the requested site.
 ## get_datasources_by_site
 
 Returns a list of datasources for the requested sites.
-
+View and run this [Node.js example](https://repl.it/@AndrewCowley/getdatasourcesbysite-example) on Repl.it
 Example:
 
 ### Parameters
