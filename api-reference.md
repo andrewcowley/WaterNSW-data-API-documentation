@@ -57,7 +57,7 @@ Returns the latest values in the timeseries for the specified sites and variable
 | datasource | string or array  | Yes       | The datasource from which the data will be provided |
 | trace_list | object           | Yes       | See [trace_list object](#trace_list-object) below.  |
 
-#### trace_list object
+#### `trace_list` object
 
 | parameter      | type    | required  | description                                         |
 |----------------|---------|-----------|-----------------------------------------------------|
