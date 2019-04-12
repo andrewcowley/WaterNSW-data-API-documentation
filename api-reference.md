@@ -187,6 +187,8 @@ Returns an array of one or more geojson features of type point that correspond t
 | fields    | array           | Fields that will be returned in the response             |
 | get_elev  | boolean         | If true, site elevation will be returned in the response |
 
+Fields include details of the requested site.
+
 ### Example query object
 
 ```JSON
@@ -194,9 +196,9 @@ Returns an array of one or more geojson features of type point that correspond t
   "function": "get_site_geojson",
   "version": 2,
   "params": {     
-    "site_list": '204006',
+    "site_list": "204006",
     "get_elev": 1,
-    "fields": ['zone']
+    "fields": ["zone"]
   }
 }
 ```
