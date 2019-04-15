@@ -8,7 +8,7 @@
 - [get_variable_list](#get_variable_list)
 - [get_db_info](#get_db_info)
 
-## get_site_list
+## `get_site_list`
 
 A list of monitoring sites that match a provided [site list expression](#site-list-expressions).
 
@@ -16,9 +16,9 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 
 ### Parameters
 
-| parameter | type            | required | description                                             |
-|-----------|-----------------|----------|---------------------------------------------------------|
-| site_list | string          | Yes      | A valid [site list expression](#site-list-expressions)  |
+| parameter   | type            | required | description                                             |
+|-------------|-----------------|----------|---------------------------------------------------------|
+| `site_list` | string          | Yes      | A valid [site list expression](#site-list-expressions)  |
 
 ### Example query object
 
