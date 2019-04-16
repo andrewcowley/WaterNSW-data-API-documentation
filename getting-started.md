@@ -39,7 +39,7 @@ This object requires three top level keys:
     }
   }
   ```
-  When appending the JSON as a URL query parameter all spaces must be removed. In JavaScript [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) will achive this.
+  When appending the JSON as a URL query parameter all spaces must be removed. In JavaScript [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) will achieve this.
   
  ```JS
  const query =   {
@@ -55,7 +55,7 @@ This object requires three top level keys:
 
 ### 3. Optional URL query parameters
 
-  1. `ver=2`: When the `ver` URL parameter isn't provded on the request URL some of the keys in the returned JSON are prefixed to work around JSON parsing in old browsers.
+  1. `ver=2`: When the `ver` URL parameter isn't provided on the request URL some of the keys in the returned JSON are prefixed to work around JSON parsing in old browsers.
   2.  `mime=csv`: This URL parameter will cause the response to have its HTTP `content-type` header set to `text/csv`. **This will not change the format of the response from JSON to CSV.**
   3. **format**
     - `format=csv`: The response is returned in CSV format
