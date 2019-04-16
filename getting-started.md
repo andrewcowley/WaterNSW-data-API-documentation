@@ -98,15 +98,13 @@ A successful response has four top level parameters:
   3. `buff_supplied`: The bytes allocated to the response by the system.
   4. `return`: The data returned from the API in response to the query object in the request.
 
-**The default `content-type` header of the response is `text/html`**
+**The default `content-type` of the response is `text/html`**
 
 ### Errors
 
-Not providing a valid `User-Agent` header will result in a `502 Bad Gateway` error.
+If there is an error in the client request 4XX series HTTP codes **are not returned**. Error codes are instead returned in the API response with a `200 OK` code. The exception to this is not providing a valid `User-Agent` header. This will result in a `502 Bad Gateway` error.
 
-If there is an error in the client request 4XX series HTTP codes **are not returned**. Error codes are instead returned in the API response with a `200 OK` code. 
-
-`"err_num": 0` represents a request with no errors. If an error is present an `err_msg` key will be present with the value outlining the error message.
+If an error is present an `err_msg` key will be present with the value outlining the error message.
 
 ```JSON
 {
