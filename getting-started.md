@@ -39,10 +39,18 @@ This object requires three top level keys:
     }
   }
   ```
-  The JSON needs to have all spaces removed and provided in the URL as a URL query parameter. For example:
+  When appending the JSON as a URL query parameter all spaces must be removed. In JavaScript [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) will achive this.
   
- ```
- https://realtimedata.waternsw.com.au/cgi/webservice.pl?{"function":"get_site_list","version":2,"params":{"site_list":"MATCH(210*)"}}
+ ```JS
+ const query =   {
+    "function": "get_site_list",
+    "version": 2,
+    "params": {
+      "site_list": "MATCH(210*)"
+    }
+  };
+  
+ const stringifiedQuery = JSON.stringify(query);
  ```
 
 ### 3. Optional URL query parameters
