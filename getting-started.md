@@ -4,7 +4,7 @@ This guide outlines how to make a request to the NSW Water API and what will be 
 
 ## Audience
 
-This document is written for web and mobile application developers, however the principles are the same for anyone looking to request data from this API. It is assumed that the reader has familiarity with making HTTP requests from their programming language, or tool, of choice. All examples in the guide are written in [Node.js](https://nodejs.org/).
+This document is written for web and mobile application developers, however the principles are the same for anyone looking to request data from this API. It is assumed that the reader has familiarity with making HTTP requests from their programming language, or tool, of choice. Examples provided in the guide are written in [Node.js](https://nodejs.org/).
 
 ## Make a request
 
