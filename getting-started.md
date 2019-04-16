@@ -55,13 +55,11 @@ This object requires three top level keys:
 
 ### 3. Optional URL query parameters
 
-  1. **ver**
-    - `2`: Modifies keys in the returned response are modified to remove prefixes that were present in version. **Recommended**
-  2. **mime**
-    - `csv`: The response has its HTTP `content-type` header set to `text/csv`
+  1. `ver=2`: When the `ver` URL parameter isn't provded on the request URL some of the keys in the returned JSON are prefixed to work around JSON parsing in old browsers.
+  2.  `mime=csv`: This URL parameter will cause the response to have its HTTP `content-type` header set to `text/csv`. **This will not change the format of the response from JSON to CSV.**
   3. **format**
-    - `csv`: The response is returned in CSV format
-    - `csvc`: The response returned in CSV format with rows have trailing commas.
+    - `format=csv`: The response is returned in CSV format
+    - `format=csvc`: The response returned in CSV format with rows have trailing commas.
 
 ### 4. Request HTTP methods
 
@@ -75,7 +73,7 @@ Requests to the API will fail with a HTTP 502 error unless a `User-Agent` header
 
 ### Requests from the browser
 
-Making a XMLHttpRequest/AJAX request from the browser is not possible as the NSW Water API does not support cross origin requests. JSONP can be used to get past the cross origin restrictions.
+Making a XMLHttpRequest/AJAX request from the browser is not possible as the NSW Water API does not support cross origin requests. JSONP can be used to work around the cross origin restrictions.
 
 ## Responses
 
