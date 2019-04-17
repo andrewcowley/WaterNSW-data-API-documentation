@@ -252,7 +252,8 @@ Example:
 ### Example response
 
 ## get_variable_list
-TODO
+
+Returns all of the variables that are recorded for a site's datasource.
 
 ### Parameters
 
