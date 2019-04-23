@@ -117,6 +117,12 @@ If an error is present an `err_msg` key will be present with the value outlining
 | Error code | Description                 |
 |------------|-----------------------------|
 | 0          | No error                    |
+| 21         | Invalid date                |
+| 22         | Invalid time                |
+| 23         | End time before start time  |
+| 80         | Invalid datasource          |
+| 83         | Invalid site                |
+| 84         | Invalid site list           |
 | 100        | Invalid function parameter  |
 | 120        | Invalid top level parameter |
 
