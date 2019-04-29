@@ -76,7 +76,7 @@ Requests to the API will fail with a HTTP 502 error unless a `User-Agent` header
 Making a XMLHttpRequest/AJAX request from the browser is not possible as the NSW Water API does not support cross origin requests. JSONP can be used to work around the cross origin restrictions.
 
 #### CSV Download
-If the optional URL parameters are set to return a CSV, instead of JSON, browsers will download the CSV file. This is useful for working with historical data as the data can be downloaded and then woked with locally.
+If the [optional URL parameters](/getting-started.md#3-optional-url-query-parameters) are set to return a CSV, instead of JSON, browsers will download the CSV file. This is useful for working with historical data as the data can be downloaded and then woked with locally.
 
 ## Responses
 
