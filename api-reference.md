@@ -45,7 +45,7 @@ View and run this [Node.js example](https://repl.it/@AndrewCowley/getsitelist-ex
 }
 ```
 
-## get_latest_ts_values
+## `get_latest_ts_values`
 
 Returns the latest values in the timeseries for the specified sites and variables.
 
@@ -136,7 +136,7 @@ Returns the latest values in the timeseries for the specified sites and variable
    "buff_supplied":1000
 }
 ```
-## get_sites_by_datasource
+## `get_sites_by_datasource`
 
 ### Parameters
 
@@ -173,7 +173,7 @@ Returns the latest values in the timeseries for the specified sites and variable
   "buff_supplied": 45439
 }
 ```
-## get_site_geojson
+## `get_site_geojson`
 
 Returns an array of one or more geojson features of type point that correspond to sites matching the site list expression.
 
@@ -232,7 +232,7 @@ Fields include details of the requested site.
 }
 ```
 
-## get_datasources_by_site
+## `get_datasources_by_site`
 
 Returns a list of datasources for the requested sites.
 View and run this [Node.js example](https://repl.it/@AndrewCowley/getdatasourcesbysite-example) on Repl.it
@@ -247,11 +247,9 @@ Example:
 
 ### Example query object
 
-
-
 ### Example response
 
-## get_variable_list
+## `get_variable_list`
 
 Returns all of the variables that are recorded for a site's datasource.
 
@@ -306,7 +304,7 @@ Returns all of the variables that are recorded for a site's datasource.
    "buff_supplied":1504
 }
 ```
-## get_db_info
+## `get_db_info`
 
 ### Parameters
 | parameter       | type            | description                                                                                                                                                                                                            |
