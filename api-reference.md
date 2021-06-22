@@ -149,7 +149,7 @@ Returns the latest values in the timeseries for the specified sites and variable
 ```JSON
 {
   "function": "get_sites_by_datasource",
-  "": 1,
+  "version": 1,
   "params" : {
     "datasources": ["CP"]
   }
